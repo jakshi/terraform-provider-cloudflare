@@ -33,7 +33,7 @@ func resourceCloudflareFirewallRule() *schema.Resource {
 			"action": {
 				Type:         schema.TypeString,
 				Required:     true,
-				ValidateFunc: validation.StringInSlice([]string{"block", "challenge", "allow", "js_challenge", "log"}, false),
+				ValidateFunc: validation.StringInSlice([]string{"block", "challenge", "allow", "js_challenge", "log", "bypass"}, false),
 			},
 			"priority": {
 				Type:         schema.TypeInt,
